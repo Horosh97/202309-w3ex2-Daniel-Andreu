@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Ejercicio de prueba de formularios">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
   <title>Prueba de formulario</title>
@@ -12,49 +15,44 @@
 
 <body>
   <form>
-    <label>
+    <h1 class="main-title">FORMULARIO</h1>
+    <label class="form-content">
       Nombre:
       <input type="text">
     </label>
-    <label>
+    <label class="form-content">
       Email:
       <input type="email">
     </label>
-    <label>
+    <label class="form-content">
       Contraseña:
       <input type="password">
     </label>
-    <label>
+    <label class="form-content">
       Teléfono:
       <input type="tel">
     </label>
-    <label>
+    <label class="form-content">
       Cumpleaños:
       <input type="date">
     </label>
-    <div>
+    <label class="form-content">
       <span>Género</span>
+      <select>
+        <option hidden selected>Escoge una opción</option>
+        <option value="masculine">Masculino</option>
+        <option value="femenine">Femenino</option>
+        <option value="other">Otro</option>
+        <option value="notsay">Prefiero no decirlo</option>
+      </select>
+    </label>
+    <div class="form-content">
       <label>
         <input type="checkbox">
-        Masculino
-      </label>
-      <label>
-        <input type="checkbox">
-        Femenino
-      </label>
-      <label>
-        <input type="checkbox">
-        Otro
-      </label>
-      <label>
-        <input type="checkbox">
-        Prefiero no decirlo
+        Acepto los terminos.
       </label>
     </div>
-    <label>
-      <input type="checkbox">
-      Acepto los terminos.
-    </label>
+
   </form>
 </body>
 

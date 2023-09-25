@@ -1,0 +1,41 @@
+:root {
+  --main-color: #fff690;
+  --main-font: "Montserrat", sans-serif;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--main-font);
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: var(--main-color);
+  display: flex;
+  justify-content: center;
+}
+
+.main-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: wavy;
+  margin: 10px 15px 30px 15px;
+  gap: 15px;
+  width: 300px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px 15px 30px 15px;
+  gap: 15px;
+  width: 300px;
+}
